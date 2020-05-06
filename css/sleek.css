@@ -1,9 +1,40 @@
-.container-fluid{
+/* pre loader */
+#loader{
+ z-index: 99999;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(rgba(1, 1, 1, 0.616),rgba(1, 1, 1, 0.582)), url('../img/bg2.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ margin: 0;
+ padding: 0;
  overflow: hidden;
+ position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
 }
+#loader i{
+ color: yellow;
+ text-shadow: 2px 4px 5px red;
+ margin: 30px;
+ font-size: 30px;
+}
+
+
+
+/* ======== */
+
+
+body{
+	overflow: hidden;
+}
+
 h3{
  color: black;
- text-shadow: 1px 2px 3px red;
+ text-shadow: 1px 4px 3px gray;
 }
 
 /* =============
@@ -13,7 +44,8 @@ h3{
 .all{
  background: rgba(97, 92, 92, 0.144);
  padding-bottom: 50px;
- margin-bottom: 50px;
+	margin-bottom: 50px;
+	overflow: hidden;
 }
 
 #share{
@@ -26,7 +58,7 @@ h3{
 }
 .head-item{
  background: rgba(235, 232, 232, 0.966);
- box-shadow:1px 2px 5px black;
+ box-shadow:1px 2px 4px gray;
 }
 .head-item a{
  color: black;
@@ -44,12 +76,12 @@ h3{
 }
 .text h1{
  color: rgb(37, 36, 36);
- text-shadow:1px 2px 3px rgba(243, 7, 7, 0.932);
+ text-shadow:1px 3px 3px gray;
 }
 .text i{
  color:white;
  font-size:40px;
- text-shadow: 1px 2px 5px red;
+ text-shadow: 1px 5px 5px black;
  margin-top:28px;
 }
 .wrap{
@@ -114,7 +146,8 @@ h3{
  background-size: cover;
  background-repeat: no-repeat;
  height: 600px;
- margin-bottom: 150px;
+	margin-bottom: 150px;
+	overflow: hidden;
 }
 
 .container2 {
@@ -212,17 +245,17 @@ h3{
  margin-left: -50px;
  width: 300px;
 }
-.next, .prev {
+.next, .prev , .above, .below {
  color: white;
  padding: 4px;
  font-size:30px;
  cursor: pointer;
  text-shadow: 1px 2px 4px rgb(4, 247, 105);
 }
-.next:hover, .prev:hover { 
+.next:hover, .prev:hover, .above:hover, .below:hover { 
  color:rgb(59, 56, 56); 
 }
-.next:active, .prev:active {
+.next:active, .prev:active, .above:active, .below:active {
  box-shadow: 0 1px 0 #999;
 }
 
@@ -230,27 +263,42 @@ h3{
 /* Team info */
 
 .team{
- text-align: center;
+	text-align: center;
+	margin: auto;
  margin-bottom: 50px;
 }
 .team .col-md-4 div{
  border: 1px solid gray;
- padding-top:50px;
- padding-bottom:50px;
+ padding-top:70px;
+	padding-bottom:70px;
+	text-align: center;
+	margin: auto;
  border-radius:20px;
- color: white;
+	color: white;
+	width: 80%;
  background: linear-gradient(rgba(8, 8, 8, 0.692),rgba(12, 12, 12, 0.692)),url('../img/bg2.jpg');
  background-size: cover;
  background-repeat: no-repeat;
 }
 .team img{
  border-radius:50%;
- height: 250px;
- width: 200px;
+ height: 150px;
+ width:120px;
+}
+.team h4{
+	margin-bottom: 10px;
+	color: black;
+	text-shadow: 1px 3px 4px gray;
 }
 .team h5{
  margin-top:20px;
  margin-bottom:10px;
+}
+.team hr{
+	width: 50px;
+	border: 3px solid black;
+	box-shadow: 1px 5px 4px gray;
+	margin-bottom: 70px;
 }
 .team em{
  color: rgb(148, 143, 143);
