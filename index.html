@@ -31,8 +31,17 @@
               <ul class="navbar" id="share">
                 <li><a href="#" style="color:red;">SULAIMAN</a></li>
                 <li><a href="#">OVERVIEW</a></li>
-                <li><a href="#">FEATURES<i class="fa fa-caret-down"></i></a></li>
-                <li><a href="#">HELP<i class="fa fa-caret-down"></i></a></li>
+                <li class="nav-item dropdown menu">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FEATURES
+                  </a>
+                  <div class="dropdown-menu linked" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+                    <a class="dropdown-item" href="#"> Our Team</a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">Check Projects</a>
+                  </div>
+                  </li>
+                <li></i></a></li>
                 <li><a  class="btn btn-default" href="#">DOWNLOAD</a></li>
                 <li class="nav-item dropdown menu">
                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><sup><i class="fa fa-key"></i></sup>
@@ -64,18 +73,29 @@
         </div>
       </div>
     </div>
+
+    <!-- media query -->
+
+    <div class="small-header">
+      <ul>
+        <li><a href="#" style="color:red;">SULAIMAN</a></li>
+        <li>
+          <i class="fa fa-bars"></i>
+        </li>
+      </ul>
+    </div>
   
     <!-- carrer coaching -->
     
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 edit">
+      <div class="row" id="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 edit">
           <div class="work">
 
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="edit">
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <div class="ment">
             <div>
               <h3>Career Mentoring</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa placeat facere aliquid asperiores ndis veniam, id suscipit. Voluptas.</p>
@@ -146,6 +166,7 @@
       <hr>
       <div class="row">
         <div class="col-md-4">
+          <div class="in">
           <div class="give">
           <img src="img/f3.jpg" alt="">
           <h5>Taiwo Sulaimon</h5>
@@ -153,9 +174,11 @@
           <i class="fab fa-google-plus"></i>
           <i class="fab fa-twitter-square"></i>
           <i class="fab fa-whatsapp-square"></i>
+          </div>
         </div>
         </div>
         <div class="col-md-4">
+          <div class="in">
           <div class="give">
           <img src="img/f2.jpg" alt="">
           <h5>Taiwo Sulaimon</h5>
@@ -163,9 +186,11 @@
           <i class="fab fa-facebook-square"></i>
           <i class="fab fa-twitter-square"></i>
           <i class="fab fa-whatsapp-square"></i>
+          </div>
         </div>
         </div>
         <div class="col-md-4">
+          <div class="in">
           <div class="give">
           <img src="img/f4.jpg" alt="">
           <h5>Taiwo Sulaimon</h5>
@@ -173,7 +198,8 @@
           <i class="fab fa-facebook-square"></i>
           <i class="fab fa-twitter-square"></i>
           <i class="fab fa-instagram"></i>
-          </div>
+     
+     </div>   </div>
         </div>
       </div>
     </div>
@@ -181,7 +207,34 @@
     <!-- footer section -->
 
     <footer>
-      <div>Copy right Taiwo Sulaiman &copy;copy <script>document.write(new Date().getFullYear())</script></div>
+      <div class="container line">
+        <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h3>Join our Career building community</h3>
+          </div>
+          <div class="sub">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic veritatis sint odit amet repellat accusamus quod, ad, unde earum harum quibusdam id iure molestias? Tenetur incidunt commodi rerum ad unde.</p>
+            <button class="up">Subscribe</button>
+            <button>Sign Up</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <textarea name="comment" id="" cols="25" rows="8" placeholder=".Write us a comment"></textarea>
+          <div class="inner">
+            <i class="fa fa-heart"></i>
+            <input type="text">
+            <i class="fa fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="di">
+        <div><h1>Or</h1></div>
+      <hr>
+    </div>
+    
+      <div class="copy">Copy right Taiwo Sulaiman &copy;copy <script>document.write(new Date().getFullYear())</script></div>
     </footer>
  
 
