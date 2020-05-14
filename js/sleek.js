@@ -10,7 +10,7 @@ $(document.window).ready(function (){
     $('body').css({
       "overflow": "auto",
     })
-  }, 4900);
+  },5000);
   
 });
 
