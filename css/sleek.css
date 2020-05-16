@@ -28,12 +28,13 @@
 /* ======== */
 
 body{
-	width: 100%;
+	width:100%;
 	height: 100%;
 	overflow: hidden;
 }
 *{
 	box-sizing: border-box;
+	margin: auto;
 }
 
 
@@ -58,9 +59,8 @@ h3{
 }
 .small-header{
 	display: none;
-}
-.small-header li{
-	list-style: none;
+	text-align: left;
+	position: relative;
 }
 .small-header i{
 	border:2px solid red;
@@ -76,7 +76,99 @@ h3{
 	cursor: pointer;
 	color:red;
 }
-
+.show-wrap{
+	width:200px;
+	display: none;
+	background:linear-gradient(to bottom, rgb(0, 0, 0),rgba(44, 44, 42, 0.52)),url('../img/bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	height:100%;
+	text-align: left;
+	margin: 0 45px 0 auto;
+}
+.shown{
+	width:100%;
+	height: 100%;
+	margin-top:10px;
+	margin-bottom:50px;
+}
+.shown ul{
+	list-style: none;
+	display: block;
+	color: white;
+	font-size:15px;
+	font-weight: 500;
+}
+.shown li a{
+	color: white;
+	text-decoration: none;
+	padding-right: 20px;
+	transition: all 0.5s;
+}
+.shown li a:hover{
+	color: gray;
+}
+.shown ul li{
+	margin-top:20px;
+}
+.shown ul li button{
+	outline: none;
+	color: white;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	transition: ease-in-out 0.6s;
+}
+.shown ul li button:hover{
+	color:black;
+	background:white;
+}
+.shown .nav-link{
+	padding: 0;
+	width: 100px;
+	margin: 0px !important;
+	margin-top: 10px !important;
+}
+.shown ul li .dropdown-menu{
+	position: relative;
+	top: 100%;
+	z-index: 0;
+	left: 0;
+	/* display: none; */
+	float: left;
+	min-width: 10rem;
+	padding: .5rem 0;
+	margin: .125rem 0 0;
+	font-size: 1rem;
+	color:black;
+	text-align: left;
+	list-style: none;
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.438));
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
+	margin-bottom: 10px;
+}
+/* html body div:nth-child(4) div ul li:nth-child(2) div{
+	position: relative;
+	top: 100%;
+	left: 0;
+	display: none;
+	float: left;
+	min-width: 10rem;
+	padding: .5rem 0;
+	margin: .125rem 0 0;
+	font-size: 1rem;
+	color:black;
+	text-align: left;
+	list-style: none;
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.438));
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
+	margin-bottom: 10px;
+} */
 #share{
  display: flex;
  justify-content: space-evenly !important;
@@ -100,7 +192,7 @@ h3{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  font-style: italic;
  text-align: center;
- width: 100%;
+ width:99%;
  margin: 30px;
 }
 .text h1{
@@ -130,7 +222,7 @@ h3{
 .work{
  background: url('../img/work.gif');
  height:100%;
- width:100%;
+ width:99%;
  background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -158,14 +250,14 @@ h3{
 .fitness .left{
  background: url('../img/frog.gif');
  height:400px;
- width:100%;
+ width:99%;
  background-repeat: no-repeat;
 	background-size: contain;
 }
 .fitness .right{
  background: url('../img/dump.gif');
  height:400px;
- width:100%;
+ width:99%;
  background-repeat: no-repeat;
  background-size: contain;
 }
@@ -182,9 +274,11 @@ h3{
  background:linear-gradient(rgba(13, 13, 14, 0.74), rgba(0, 0, 0, 0.93)), url('../img/bg.jpg');
  background-size: cover;
  background-repeat: no-repeat;
- height: 600px;
+	height: 600px;
+	margin: auto;
 	margin-bottom: 150px;
 	overflow: hidden;
+	width: 90%;
 }
 
 .container2 {
@@ -315,7 +409,9 @@ h3{
 .team{
 	text-align: center;
 	margin: auto;
- margin-bottom: 50px;
+	margin-bottom: 50px;
+	width: 90%;
+	padding: 0;
 }
 
 .in{
@@ -323,8 +419,8 @@ h3{
 	align-items: center;
 	justify-content: center;
 	border: 1px solid gray;
-	height:300px;
-	width: 70%;
+	height:250px;
+	width:170px;
 	text-align: center;
 	margin: auto;
  border-radius:20px;
@@ -333,12 +429,12 @@ h3{
  background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: inset 12px 3px 18px 7px rgb(6, 3, 3);
-
+	box-sizing: border-box;
 }
 .team img{
  border-radius:50%;
- height: 100px;
- width:100px;
+ height:80px;
+ width:70px;
 }	
 .team h4{
 	margin-bottom: 10px;
@@ -349,7 +445,7 @@ h3{
 	margin: 0;
 	padding: 0;
  margin-top:20px;
-	font-size:15px;
+	font-size:13px;
 }
 .team hr{
 	width: 50px;
@@ -363,9 +459,10 @@ h3{
 }
 .team .in{
 	transition: ease-in-out 0.6s;
+	margin-top:30px;
 }
 .in:hover{
- transform: scale(1.1);
+ transform: scale(1.15);
 }
 .team i{
 	margin: 12px;
@@ -465,33 +562,33 @@ footer .sub{
 footer .sub button{
 	text-decoration: none;
 	width: 45%;
-	border: 2px solid black;
+	border: 2px solid red;
 	padding:5px;
 	color: black;
 	font-weight:500px;
-	font-size: 20px;
+	font-size: 15px;
 	outline: none;
 	background: none;
 	transition: all 1s;
 	border-radius: 5px;
 }
 footer .sub button:hover{
-	font-weight:600px;
-	font-size: 22px;
-	color: red;
-	background: white;
+	font-weight:500px;
+	font-size: 15px;
+	color: white;
+	background: black;
 	border: 2px solid red;
 }
 footer .sub .up{
-	background:red;
+	background:black;
 	color: white;
 }
 
 footer .sub .up:hover{
 	background: white;
 	color: black;
-	font-weight:600px;
-	font-size: 22px;
+	font-weight:500px;
+	font-size: 15px;
 }
 
 footer .copy{
@@ -509,13 +606,17 @@ footer .copy{
 		display: none;
 	}
 	.small-header{
-		display: block;
-	}
-	.small-header ul{
-		display:flex;
-		margin:20px 40px 0px 40px;
+		display: flex;
+		text-align: left;
 		justify-content: space-between;
+		width: 100%;
+		margin-top: 10px;
 	}
+	.small-header div{
+	
+		margin:10px 15px 0px 15px;
+	}
+
 	.edit{
 		margin-top:20px;
 		display:block;
@@ -537,7 +638,7 @@ footer .copy{
 	}
 	.in{
 		margin-top: 20px;
-		width: 200px;
+		width:170px;
 	}
 	#row{
 		height: 500px;

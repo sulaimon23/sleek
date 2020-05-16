@@ -14,6 +14,31 @@ $(document.window).ready(function (){
   
 });
 
+$('#burg').click(function(){
+      $('.show-wrap').slideToggle(1000)
+}) 
+
+   // $('.show-wrap').show()
+  
+        // $('.show-wrap').hide()
+
+//  var toggle = true;
+
+// $('#burg').click(function(){
+//   if(toggle){
+//     $('.show-wrap').show(
+//       $('.show-wrap').fadeToggle(1000) 
+//     )
+//   } 
+// }) 
+
+// $('#burg').click(function(){
+//   if(toggle = !toggle) {
+//     $('.show-wrap').hide()
+//   }
+// })
+
+
 
 
 $(function(){
